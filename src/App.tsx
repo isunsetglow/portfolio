@@ -3,6 +3,7 @@ import ScrollUp from './ScrollUp'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '//vite.svg'
 import './App.css'
+import profile from '/maria-hernandez.png'
 
 function App() {
   const about = useRef(null)
@@ -31,18 +32,22 @@ function App() {
         </ul>
       </div>
       <div className='main'>
-        <h2>Hello! My name is</h2>
+        <h2 className='left'>Hello! My name is</h2>
         <h1 className='name'>Maria Hernandez</h1>
-        <h2>and I'm a Front-end Web Developer.</h2>
+        <h2 className='right'>and I'm a Front-end Web Developer.</h2>
       </div>
       <div ref={about} className='about'>
-        <p>I am an Information Technology student at the University of Central Florida. 
+        <img className='profile' src={profile} alt='profile'/>
+        {/* className="w-[667px] h-[114px] text-black text-8xl font-normal font-['Satisfy'] */}
+        <h1 className="text-black text-5xl font-normal">Hi!</h1>
+        <p> My name is Maria and I'm an Information Technology student at the University of Central Florida. 
           I am passionate about creating beautiful and functional websites and applications. </p>
         <p>I started this journey a year ago and the more I learn about it the more I love it.
           Art has always been a form of expression for me and I love that I can express myself through code as well.
-          I am a very creative person and I love to learn new things. I am always looking for new challenges and ways to improve my skills.
+          I'm a very creative person and I love to learn new things. I'm always looking for new challenges and ways to improve my skills.
           Currently, I'm focusing on finishing my last 2 semester strong and pursuing new opportunitues to continue to grow as a developer.
         </p>
+        
       </div>
       <div ref={projects} className='projects'>
 
